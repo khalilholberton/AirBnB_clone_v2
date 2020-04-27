@@ -10,6 +10,7 @@ def hello_world():
     """print Hello HBNB"""
     return ("Hello HBNB!")
 
+
 @app.route('/hbnb')
 def display_hbnb():
     """print HBNB"""
