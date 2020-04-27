@@ -24,6 +24,7 @@ def c(var):
     """print C with variable as given text"""
     return "C " + var.replace('_', ' ')
 
+
 @app.route('/python')
 @app.route('/python/<text>')
 def dislay_python(text="is cool"):
