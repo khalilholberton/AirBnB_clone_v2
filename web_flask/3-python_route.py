@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''script start a flask application on 0.0.0.0 port 5000'''
+'''script start flask application to listen
+ on 0.0.0.0 port 5000 with variables'''
+
 from flask import Flask
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -23,7 +25,7 @@ def c(var):
     return "C " + var.replace('_', ' ')
 
 @app.route('/python')
-@app.route('/python/<var>')
+@app.route('/python/<text>')
 def dislay_python(text="is cool"):
     """
     print python with variable as given text and replaces _ with space
