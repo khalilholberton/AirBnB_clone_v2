@@ -16,7 +16,7 @@ def city_by_state():
     st = []
     for key in storage.all(State):
         st.append(storage.all(State)[key])
-    return render_template('8-cities_by_states.html', st=st)
+    return render_template('7-states_list.html', st=st)
 
 
 @app.teardown_appcontext
