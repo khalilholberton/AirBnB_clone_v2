@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
-@app.route('/cities_by_states', strict_slashes=False)
+@app.route('/states_list')
 def city_by_state():
     '''city by state'''
     st = []
